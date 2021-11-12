@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Coding Quiz</title>
+    <link rel="stylesheet" href="../04-challenge-redo-timed-quiz/assets/style.css">
+</head>
+
+<body>
+  <header class="header">
+    <button id="highscore">View High Scores</button>
+    <p class="timer" id="timer">Timer: 75</p>
+  </header>
+
+<!-- Intro Page -->
+  <div class="intro-container" id="intro-container">
+    <div class="quiz-rules" id="quiz-rules">
+      <h1 class="quiz-challenge">Coding Quiz Challenge</h1>
+        <p>Try to answer the following code-related questions within the time limit. Keep in mind that incorrect answers will penalize your score/time by ten seconds!</p>
+    </div>
+  </div> 
+
+<!-- Start Button -->
+  <div class="start-quiz">
+    <button class="start-btn" id="start-btn" type="submit">Start Quiz</button>
+  </div>
+
+<!-- Quiz Questions -->
+  <div class="question-container hidden" id="question-container">
+    <div class="questions" id="questions">Questions:</div>
+      <div class="buttons" id="answser-buttons">
+        <button class="answer-btn" id="answer-btn1">Answer 1</button>
+        <button class="answer-btn" id="answer-btn2">Answer 2</button>
+        <button class="answer-btn" id="answer-btn3">Answer 3</button>
+        <button class="answer-btn" id="answer-btn4">Answer 4</button>
+    </div>
+  </div>
+
+<!-- Correct/Incorrect Answers --> 
+  <div class="correct hidden" id="correct-answer" ></div>
+  <div class="incorrect hidden" id="incorrect-answer"></div>
+   
+
+<!-- End of Quiz -->
+  <div class="last-page hidden" id="last-page">
+    <h2 class="all-done">All Done!</h2>
+      <p id="enter-initials"></p>
+      <p>Enter Initials:
+        <input type="text" placeholder="Your initials" id="initials" />
+        <button class="submit-btn" id="submit-btn" type="button">Submit</button>
+      </p>
+  </div>
+
+<!-- High Scores -->
+  <div class="high-scores hidden" id="high-scores">
+    <h1>High Scores</h1>
+      <div class="high-score-list" id="high-score-list"></br></br>
+      <ol id="new-scores"></ol></br></br>
+        <a href="index.html"><button id="go-back">Go Back</button></a>
+        <button class="clear" id="clear">Clear Highscores</button>
+      </div>
+  </div>
+
+<script src="../04-challenge-redo-timed-quiz/assets/script.js"></script>
+</body>
+</html>
